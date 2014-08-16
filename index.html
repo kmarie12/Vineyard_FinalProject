@@ -1,0 +1,81 @@
+---
+layout: default
+---
+<!-- <!doctype html>
+ --><html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+     <section class="about">
+        <div class="row">
+          <div class ="title columns small-12 large-4">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h2>about us</h2></a>
+          </div>
+          <div class="blurb columns small-12 large-4">
+            <p>Blurb about us, a small paragraph here.</p>
+          </div>
+          <div class="doodle columns small-12 large-4">
+            <!-- small doodle -->
+          </div>      
+        </div>
+     </section>
+     <section class="location">
+      <div class="row">
+        <div class ="title columns small-12 large-4">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h2>find us</h2></a>
+          </div>
+          <div class="blurb columns small-12 large-4">
+            <p>Blurb about us, a small paragraph here.</p>
+          </div>
+          <div class="doodle columns small-12 large-4">
+            <!-- small doodle -->
+          </div>         
+        </div>
+     </section>
+     <section class="blog">
+      <div class="row">
+          <div class ="title columns small-12 large-4">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h2>the work</h2></a>
+          </div>
+          <div class="blurb columns small-12 large-4">
+            <p>Blurb about us, a small paragraph here.</p>
+          </div>
+          <div class="doodle columns small-12 large-4">
+            <!-- small doodle -->
+          </div>         
+        </div>
+        </div>
+     </section>
+     <section class="live-feed">
+
+     </section>
+
+    <div class="home">
+
+      <h1>Posts</h1>
+
+      <ul class="posts">
+        {% for post in site.posts %}
+          <li>
+            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><!-- {{ post.title }} --></a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+    </div>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
