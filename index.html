@@ -1,8 +1,8 @@
----
+<!-- ---
 layout: default
----
-<!-- <!doctype html>
- --><html class="no-js" lang="en">
+--- -->
+ <!doctype html>
+ <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,7 @@ layout: default
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
+    <div class="main-welcome"><img src="http://i.imgur.com/D1mlkyz.jpg"></div>
      <section class="about">
         <div class="row">
           <div class ="title columns small-12 large-4">
@@ -63,7 +64,7 @@ layout: default
         {% for post in site.posts %}
           <li>
             <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><!-- {{ post.title }} --></a>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </li>
         {% endfor %}
       </ul>
