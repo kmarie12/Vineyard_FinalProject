@@ -8,18 +8,22 @@ layout: default
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-    <div class="main-welcome"><img src="http://i.imgur.com/D1mlkyz.jpg"></div>
-    <div class="jump-down"><img src=" "> 
-      <!-- put dropdown arrow here! -->
-    </div>
+    <section class="main-welcome"><img src="http://i.imgur.com/D1mlkyz.jpg">
+      <div class="jump-down">
+        <img src="http://i.imgur.com/iQUDxSo.png">
+        <input type="button" id="jump-down"/>
+      </div>
+    </section>
+      <!-- put dropdown arrow here! onclick="scroll_bottom();" -->
 
-     
+
      <section class="picturequote-one" style="opacity: 1; background-image:url(http://i.imgur.com/VKX0nBb.jpg);">
       <div class="picture-one">
-        <h2>Quote quote big long quote</h2> 
+        <h2></h2> 
         <!-- block div or even an image when making the quote -->
       </div>
      </section>
@@ -27,10 +31,10 @@ layout: default
      <section class="about">
         <div class="row">
           <div class ="title columns small-12 large-4">
-            <a class="post-link" href="about/index.html"><h2>about us</h2></a>
+            <a class="post-link" href="about.html"><h2>about us</h2></a>
           </div>
           <div class="blurb columns small-12 large-4">
-            <p>Blurb about us, a small paragraph here.</p>
+            <p>Lorem ipsum dolor sit amet, vidit euripidis consectetuer nam no, an sed solum audire labitur. Cu qui choro partiendo, cu cibo accusata cum. Per ex facer debet, vero ubique percipit mei an, sea choro eirmod ut. Nec bonorum vivendum ullamcorper et, dicunt corpora dissentiet an nec. Ut quis vivendum explicari sit, elitr zril efficiendi usu an. Consequat moderatius liberavisse et sit, sed ne malis nostrum, persius mediocrem consetetur vis no..</p>
           </div>
           <div class="doodle columns small-12 large-4">
             <!-- small doodle -->
@@ -40,7 +44,7 @@ layout: default
 
      <section class="picturequote-two" style="opacity: 1; background-image:url(http://i.imgur.com/8ZwZlfy.jpg);">
       <div class="picture-two">
-        <h2>Quote quote big long quote</h2> 
+        <h2></h2> 
         <!-- block div or even an image when making the quote -->
       </div>
      </section>
@@ -51,7 +55,7 @@ layout: default
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h2>find us</h2></a>
           </div>
           <div class="blurb columns small-12 large-4">
-            <p>Blurb about us, a small paragraph here.</p>
+            <p>Lorem ipsum dolor sit amet, vidit euripidis consectetuer nam no, an sed solum audire labitur. Cu qui choro partiendo, cu cibo accusata cum. Per ex facer debet, vero ubique percipit mei an, sea choro eirmod ut. Nec bonorum vivendum ullamcorper et, dicunt corpora dissentiet an nec. Ut quis vivendum explicari sit, elitr zril efficiendi usu an. Consequat moderatius liberavisse et sit, sed ne malis nostrum, persius mediocrem consetetur vis no.</p>
           </div>
           <div class="doodle columns small-12 large-4">
             <!-- small doodle -->
@@ -61,7 +65,7 @@ layout: default
 
      <section class="picturequote-three" style="opacity: 1; background-image:url(http://i.imgur.com/aEdXziu.jpg);">
       <div class="picture-three">
-        <h2>Quote quote big long quote</h2> 
+        <h2></h2> 
         <!-- block div or even an image when making the quote -->
       </div>
      </section>
@@ -69,10 +73,10 @@ layout: default
      <section class="blog">
       <div class="row">
           <div class ="title columns small-12 large-4">
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h2>the work</h2></a>
+            <a class="post-link" href="progress.html"><h2>our progress</h2></a>
           </div>
           <div class="blurb columns small-12 large-4">
-            <p>Blurb about us, a small paragraph here.</p>
+            <p>Lorem ipsum dolor sit amet, vidit euripidis consectetuer nam no, an sed solum audire labitur. Cu qui choro partiendo, cu cibo accusata cum. Per ex facer debet, vero ubique percipit mei an, sea choro eirmod ut. Nec bonorum vivendum ullamcorper et, dicunt corpora dissentiet an nec. Ut quis vivendum explicari sit, elitr zril efficiendi usu an. Consequat moderatius liberavisse et sit, sed ne malis nostrum, persius mediocrem consetetur vis no.</p>
           </div>
           <div class="doodle columns small-12 large-4">
             <!-- small doodle -->
@@ -80,29 +84,13 @@ layout: default
         </div>
         </div>
      </section>
-     <section class="live-feed">
+     
 
-     </section>
-
-    <div class="home">
-
-      <h1>Posts</h1>
-
-      <ul class="posts">
-        {% for post in site.posts %}
-          <li>
-            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-
-      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-    </div>
+    
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/main.js"></script>
     <script>
       $(document).foundation();
     </script>
